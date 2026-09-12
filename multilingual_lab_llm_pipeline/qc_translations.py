@@ -11,7 +11,10 @@ Two things cut that down:
   (english, draft) pair and `--apply` fans the decision back out to every occurrence.
 * Back-translation. Each distinct draft is translated back into English and compared
   with the source, which surfaces drafts that changed the meaning. Mechanical checks
-  run alongside it for dropped abbreviations, dropped numbers, and untranslated text.
+  run alongside it for dropped abbreviations, dropped numbers, untranslated text,
+  drafts returned in the wrong script, and one English term rendered inconsistently
+  across cases -- "Crystals" arriving as both 결정 and 결정체 would hand the model a
+  different analyte name depending on which case it is reading.
 
 Back-translation is a triage signal, never a verdict: an unflagged row is one no
 automated check objected to, not one that has been verified. Only a co-author's entry
@@ -22,7 +25,7 @@ here. Point it at a different model with --model once another provider key is in
 Usage:  python qc_translations.py --langs ko ar th     # build translations/qc_{lang}.xlsx
         python qc_translations.py --langs ko --apply   # merge decisions into verify_ko.xlsx
 """
-import argparse, json, os, re, sys
+import argparse, collections, json, os, re, sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import pandas as pd
@@ -93,15 +96,23 @@ def numbers_lost(english, draft):
     return lost
 
 
+MIN_DRIFT_WORDS = 4  # below this, word overlap says nothing useful -- see drift()
+
+
 def drift(english, backtranslation):
     """Word overlap between the source and its back-translation, 0.0 to 1.0.
 
     Deliberately crude. It ranks rows for human attention; it does not score a
     translation, and a low value is a prompt to look rather than a defect.
+
+    Returns 1.0 for anything shorter than MIN_DRIFT_WORDS, because on a one- or
+    two-word term the measure is degenerate: "Ketones" against "Ketone" scores
+    zero, as would any correct synonym. Short strings are covered by the
+    mechanical checks and by the consistency check instead.
     """
     a = set(WORD.findall(str(english).lower()))
     b = set(WORD.findall(str(backtranslation).lower()))
-    if not a or not b:
+    if not a or not b or len(a) < MIN_DRIFT_WORDS:
         return 1.0
     return len(a & b) / len(a | b)
 
@@ -173,9 +184,16 @@ def build(lang, client, model):
           f"{len(set(needs_bt))} to back-translate")
     bt = back_translate(client, model, lang, sorted(set(needs_bt)))
 
+    # One English string rendered two ways across the workbook means the same analyte
+    # reaches the model under different names depending on the case, which is a
+    # confound in a study measuring language effects rather than a style question.
+    renderings = collections.Counter(g["english"] for g in groups)
+
     for g in groups:
         g["backtranslation"] = bt.get(g["draft_translation"], "")
         flags = check(g["english"], g["draft_translation"], g["field"], lang)
+        if renderings[g["english"]] > 1:
+            flags.append(f"INCONSISTENT:{renderings[g['english']]} renderings")
         overlap = drift(g["english"], g["backtranslation"]) if g["backtranslation"] else 1.0
         if overlap < 0.4 and not flags:
             flags.append("MEANING_DRIFT")
