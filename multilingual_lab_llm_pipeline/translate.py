@@ -3,6 +3,12 @@ Drafts KO/AR/TH versions of every free-text field (context, question, options, a
 not covered by fixed term tables) with one LLM, then writes a verification workbook per language
 for the native-speaking co-author (Authors 5, 2, 3). Verified text is read back by run_models.py.
 
+Each case is drafted in its own request, so a value that appears in several cases used to
+come back differently in each: "Negative" arrived in the Thai drafts as ลบ 183 times and
+as "Negative" 29 times. translations/glossary.yaml fixes those repeated lab values, and
+every request carries the entries for its case and has them enforced on the reply. See
+glossary.py, and run `python glossary.py --build` after adding cases.
+
 Usage:  python translate.py --model gpt-4o --langs ko ar th
 Env:    OPENAI_API_KEY (any OpenAI-compatible endpoint via OPENAI_BASE_URL).
         Set it in the shell or in a local .env file; see llm_keys.py and .env.example.
@@ -11,6 +17,7 @@ import argparse, json, os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from openai import OpenAI
 import pandas as pd
+import glossary
 import llm_keys
 
 LANG_NAME = {"ko": "Korean", "ar": "Modern Standard Arabic", "th": "Thai"}
@@ -51,6 +58,7 @@ def main():
                     help="redraft a language whose workbook already exists (verified columns are carried over)")
     args = ap.parse_args()
     client = OpenAI(api_key=llm_keys.require(args.key_env), base_url=args.base_url)
+    gloss = glossary.load()
     print(f"translating with {args.model} using {args.key_env}={llm_keys.mask(llm_keys.get(args.key_env))}")
     here = os.path.dirname(os.path.abspath(__file__))
     cases = [json.loads(l) for l in open(os.path.join(here, "cases.jsonl"), encoding="utf-8")][: args.limit]
@@ -62,22 +70,30 @@ def main():
             print(f"{lang}: {path} already exists — skipping (pass --overwrite to redraft; "
                   f"verified text is carried over)")
             continue
-        rows = []
+        rows, forced = [], 0
         for c in cases:
             src = fields(c)
+            system = SYS.format(lang=LANG_NAME[lang])
+            block = glossary.prompt_block(src, lang, gloss)
+            if block:
+                system += "\n\n" + block
             r = client.chat.completions.create(
                 model=args.model, temperature=0,
-                messages=[{"role": "system", "content": SYS.format(lang=LANG_NAME[lang])},
+                messages=[{"role": "system", "content": system},
                           {"role": "user", "content": json.dumps(src, ensure_ascii=False)}],
                 response_format={"type": "json_object"})
             tr = json.loads(r.choices[0].message.content)
+            # Each case is its own request, so nothing but this stops a repeated value
+            # from coming back one way here and another way in the next case.
+            forced += len(glossary.apply(tr, src, lang, gloss))
             for k, v in src.items():
                 prev = kept.get((c["case_id"], k), ("", ""))
                 rows.append({"case_id": c["case_id"], "field": k, "english": v,
                              "draft_translation": tr.get(k, ""),
                              "verified_translation": prev[0], "verifier_comment": prev[1]})
         pd.DataFrame(rows).to_excel(path, index=False)
-        print(f"{lang}: {len(rows)} strings -> {path}  (native co-author fills 'verified_translation')")
+        note = f", {forced} field(s) set from the glossary" if forced else ""
+        print(f"{lang}: {len(rows)} strings{note} -> {path}  (native co-author fills 'verified_translation')")
 
 if __name__ == "__main__":
     main()
