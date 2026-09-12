@@ -120,10 +120,16 @@ def build(langs, path=PATH):
 
         proposals = {}
         for english, counts in renderings.items():
-            if sum(counts.values()) < 2 or english in confirmed[lang]:
+            if english in confirmed[lang]:
                 continue
+            # KO_TERMS is already curated and render() applies it whatever the draft
+            # says, so pin every term in it. The threshold below exists to keep
+            # one-off strings out of the proposals guessed from the drafts, and a
+            # term that has already been decided is not a guess.
             if lang == "ko" and english in KO_TERMS:
                 confirmed[lang][english] = KO_TERMS[english]
+                continue
+            if sum(counts.values()) < 2:
                 continue
             # Leaving the English untouched is the thing being corrected, so it only
             # wins when nothing else was ever produced for this term.
