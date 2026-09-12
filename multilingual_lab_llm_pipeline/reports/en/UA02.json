@@ -1,0 +1,20 @@
+{
+ "case_id": "UA02",
+ "lang": "en",
+ "closed_direct": {
+  "report": "LABORATORY REPORT\nPatient: Age 27, Sex Female\nClinical context: Two days of dysuria and urinary frequency; afebrile.\nAnalyte | Result | Unit | Reference\nColor | Yellow |  | Yellow\nClarity | Cloudy |  | Clear\nSpecific gravity | 1.015 |  | 1.005–1.030\npH | 6.0 |  | 4.5–8.0\nProtein | Negative |  | Negative\nGlucose | Negative |  | Negative\nKetones | Negative |  | Negative\nBlood | Negative |  | Negative\nBilirubin | Negative |  | Negative\nUrobilinogen | 0.5 | mg/dL | 0.2–1.0\nNitrite | Positive |  | Negative\nLeukocyte esterase | 2+ |  | Negative\nRBC | 1 | /HPF | 0–2\nWBC | 40 | /HPF | 0–5\nSquamous epithelial cells | Few | /LPF | 0–few\nBacteria | Many |  | None\nCasts | None | /LPF | None\nCrystals | None |  | None",
+  "prompt": "Question: What is the most likely interpretation? Choose ONE option (A–D) and give a one-sentence justification.\nA. Uncomplicated cystitis; empirical treatment is reasonable\nB. Contaminated specimen; repeat collection\nC. Nephrotic syndrome\nD. Normal urinalysis"
+ },
+ "closed_translate": {
+  "report": "LABORATORY REPORT\nPatient: Age 27, Sex Female\nClinical context: Two days of dysuria and urinary frequency; afebrile.\nAnalyte | Result | Unit | Reference\nColor | Yellow |  | Yellow\nClarity | Cloudy |  | Clear\nSpecific gravity | 1.015 |  | 1.005–1.030\npH | 6.0 |  | 4.5–8.0\nProtein | Negative |  | Negative\nGlucose | Negative |  | Negative\nKetones | Negative |  | Negative\nBlood | Negative |  | Negative\nBilirubin | Negative |  | Negative\nUrobilinogen | 0.5 | mg/dL | 0.2–1.0\nNitrite | Positive |  | Negative\nLeukocyte esterase | 2+ |  | Negative\nRBC | 1 | /HPF | 0–2\nWBC | 40 | /HPF | 0–5\nSquamous epithelial cells | Few | /LPF | 0–few\nBacteria | Many |  | None\nCasts | None | /LPF | None\nCrystals | None |  | None",
+  "prompt": "Question: What is the most likely interpretation? Choose ONE option (A–D) and give a one-sentence justification.\nA. Uncomplicated cystitis; empirical treatment is reasonable\nB. Contaminated specimen; repeat collection\nC. Nephrotic syndrome\nD. Normal urinalysis"
+ },
+ "open_direct": {
+  "report": "LABORATORY REPORT\nPatient: Age 27, Sex Female\nClinical context: Two days of dysuria and urinary frequency; afebrile.\nAnalyte | Result | Unit | Reference\nColor | Yellow |  | Yellow\nClarity | Cloudy |  | Clear\nSpecific gravity | 1.015 |  | 1.005–1.030\npH | 6.0 |  | 4.5–8.0\nProtein | Negative |  | Negative\nGlucose | Negative |  | Negative\nKetones | Negative |  | Negative\nBlood | Negative |  | Negative\nBilirubin | Negative |  | Negative\nUrobilinogen | 0.5 | mg/dL | 0.2–1.0\nNitrite | Positive |  | Negative\nLeukocyte esterase | 2+ |  | Negative\nRBC | 1 | /HPF | 0–2\nWBC | 40 | /HPF | 0–5\nSquamous epithelial cells | Few | /LPF | 0–few\nBacteria | Many |  | None\nCasts | None | /LPF | None\nCrystals | None |  | None",
+  "prompt": "Please interpret this laboratory report for the treating clinician: (1) list the key abnormal findings, (2) give the most likely interpretation, (3) recommend the next step. Be concise (under 150 words)."
+ },
+ "open_translate": {
+  "report": "LABORATORY REPORT\nPatient: Age 27, Sex Female\nClinical context: Two days of dysuria and urinary frequency; afebrile.\nAnalyte | Result | Unit | Reference\nColor | Yellow |  | Yellow\nClarity | Cloudy |  | Clear\nSpecific gravity | 1.015 |  | 1.005–1.030\npH | 6.0 |  | 4.5–8.0\nProtein | Negative |  | Negative\nGlucose | Negative |  | Negative\nKetones | Negative |  | Negative\nBlood | Negative |  | Negative\nBilirubin | Negative |  | Negative\nUrobilinogen | 0.5 | mg/dL | 0.2–1.0\nNitrite | Positive |  | Negative\nLeukocyte esterase | 2+ |  | Negative\nRBC | 1 | /HPF | 0–2\nWBC | 40 | /HPF | 0–5\nSquamous epithelial cells | Few | /LPF | 0–few\nBacteria | Many |  | None\nCasts | None | /LPF | None\nCrystals | None |  | None",
+  "prompt": "Please interpret this laboratory report for the treating clinician: (1) list the key abnormal findings, (2) give the most likely interpretation, (3) recommend the next step. Be concise (under 150 words)."
+ }
+}

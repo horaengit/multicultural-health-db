@@ -1,0 +1,20 @@
+{
+ "case_id": "MOL13",
+ "lang": "en",
+ "closed_direct": {
+  "report": "LABORATORY REPORT\nPatient: Age 59, Sex Male\nClinical context: PSA 6.2 ng/mL; one prior negative biopsy; considering repeat biopsy.\nAnalyte | Result | Unit | Reference\nPCA3 score (urine, post-DRE) | 68 |  | <25 lower probability\nTotal PSA | 6.2 | ng/mL | <4.0",
+  "prompt": "Question: What is the most appropriate interpretation? Choose ONE option (A–D) and give a one-sentence justification.\nA. High PCA3 score increases the probability of prostate cancer on repeat biopsy; supports proceeding with MRI-targeted repeat biopsy\nB. PCA3 excludes prostate cancer\nC. PCA3 confirms cancer without biopsy\nD. Result is uninterpretable"
+ },
+ "closed_translate": {
+  "report": "LABORATORY REPORT\nPatient: Age 59, Sex Male\nClinical context: PSA 6.2 ng/mL; one prior negative biopsy; considering repeat biopsy.\nAnalyte | Result | Unit | Reference\nPCA3 score (urine, post-DRE) | 68 |  | <25 lower probability\nTotal PSA | 6.2 | ng/mL | <4.0",
+  "prompt": "Question: What is the most appropriate interpretation? Choose ONE option (A–D) and give a one-sentence justification.\nA. High PCA3 score increases the probability of prostate cancer on repeat biopsy; supports proceeding with MRI-targeted repeat biopsy\nB. PCA3 excludes prostate cancer\nC. PCA3 confirms cancer without biopsy\nD. Result is uninterpretable"
+ },
+ "open_direct": {
+  "report": "LABORATORY REPORT\nPatient: Age 59, Sex Male\nClinical context: PSA 6.2 ng/mL; one prior negative biopsy; considering repeat biopsy.\nAnalyte | Result | Unit | Reference\nPCA3 score (urine, post-DRE) | 68 |  | <25 lower probability\nTotal PSA | 6.2 | ng/mL | <4.0",
+  "prompt": "Please interpret this laboratory report for the treating clinician: (1) list the key abnormal findings, (2) give the most likely interpretation, (3) recommend the next step. Be concise (under 150 words)."
+ },
+ "open_translate": {
+  "report": "LABORATORY REPORT\nPatient: Age 59, Sex Male\nClinical context: PSA 6.2 ng/mL; one prior negative biopsy; considering repeat biopsy.\nAnalyte | Result | Unit | Reference\nPCA3 score (urine, post-DRE) | 68 |  | <25 lower probability\nTotal PSA | 6.2 | ng/mL | <4.0",
+  "prompt": "Please interpret this laboratory report for the treating clinician: (1) list the key abnormal findings, (2) give the most likely interpretation, (3) recommend the next step. Be concise (under 150 words)."
+ }
+}

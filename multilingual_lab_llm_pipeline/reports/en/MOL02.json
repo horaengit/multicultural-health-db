@@ -1,0 +1,20 @@
+{
+ "case_id": "MOL02",
+ "lang": "en",
+ "closed_direct": {
+  "report": "LABORATORY REPORT\nPatient: Age 42, Sex Female\nClinical context: Cervical screening; cytology: ASC-US.\nAnalyte | Result | Unit | Reference\nHigh-risk HPV DNA (PCR) | Negative |  | Negative",
+  "prompt": "Question: What is the most appropriate next step? Choose ONE option (A–D) and give a one-sentence justification.\nA. Return to routine screening (co-testing in 3 years per most guidelines)\nB. Colposcopy\nC. Cervical conisation\nD. Antiviral therapy"
+ },
+ "closed_translate": {
+  "report": "LABORATORY REPORT\nPatient: Age 42, Sex Female\nClinical context: Cervical screening; cytology: ASC-US.\nAnalyte | Result | Unit | Reference\nHigh-risk HPV DNA (PCR) | Negative |  | Negative",
+  "prompt": "Question: What is the most appropriate next step? Choose ONE option (A–D) and give a one-sentence justification.\nA. Return to routine screening (co-testing in 3 years per most guidelines)\nB. Colposcopy\nC. Cervical conisation\nD. Antiviral therapy"
+ },
+ "open_direct": {
+  "report": "LABORATORY REPORT\nPatient: Age 42, Sex Female\nClinical context: Cervical screening; cytology: ASC-US.\nAnalyte | Result | Unit | Reference\nHigh-risk HPV DNA (PCR) | Negative |  | Negative",
+  "prompt": "Please interpret this laboratory report for the treating clinician: (1) list the key abnormal findings, (2) give the most likely interpretation, (3) recommend the next step. Be concise (under 150 words)."
+ },
+ "open_translate": {
+  "report": "LABORATORY REPORT\nPatient: Age 42, Sex Female\nClinical context: Cervical screening; cytology: ASC-US.\nAnalyte | Result | Unit | Reference\nHigh-risk HPV DNA (PCR) | Negative |  | Negative",
+  "prompt": "Please interpret this laboratory report for the treating clinician: (1) list the key abnormal findings, (2) give the most likely interpretation, (3) recommend the next step. Be concise (under 150 words)."
+ }
+}

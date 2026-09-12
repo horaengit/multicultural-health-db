@@ -1,0 +1,20 @@
+{
+ "case_id": "UA15",
+ "lang": "ko",
+ "closed_direct": {
+  "report": "검사 결과 보고서\n환자: 나이 48, 성별 여\n임상 소견: Routine check; no symptoms.\n검사항목 | 결과 | 단위 | 참고치\n색깔 | 노란색 |  | 노란색\n혼탁도 | 맑음 |  | 맑음\n비중 | 1.015 |  | 1.005–1.030\npH | 6.0 |  | 4.5–8.0\n단백 | 음성 |  | 음성\n포도당 | 음성 |  | 음성\n케톤 | 음성 |  | 음성\n잠혈 | 음성 |  | 음성\n빌리루빈 | 음성 |  | 음성\n우로빌리노겐 | 0.5 | mg/dL | 0.2–1.0\n아질산염 | 음성 |  | 음성\n백혈구 에스터라제 | 음성 |  | 음성\n적혈구 | 1 | /HPF | 0–2\n백혈구 | 6 | /HPF | 0–5\n편평상피세포 | 다수(>15/LPF) | /LPF | 0–소수\n세균 | 중등도 |  | 없음\n원주 | 없음 | /LPF | 없음\n결정 | 없음 |  | 없음",
+  "prompt": "질문: What is the most appropriate interpretation? A–D 중 하나만 고르고 한 문장으로 근거를 쓰세요.\nA. Specimen contaminated by genital flora; repeat with clean-catch midstream collection\nB. Urinary tract infection; treat\nC. Vaginitis; refer to gynaecology\nD. Normal urinalysis"
+ },
+ "closed_translate": {
+  "report": "검사 결과 보고서\n환자: 나이 48, 성별 여\n임상 소견: Routine check; no symptoms.\n검사항목 | 결과 | 단위 | 참고치\n색깔 | 노란색 |  | 노란색\n혼탁도 | 맑음 |  | 맑음\n비중 | 1.015 |  | 1.005–1.030\npH | 6.0 |  | 4.5–8.0\n단백 | 음성 |  | 음성\n포도당 | 음성 |  | 음성\n케톤 | 음성 |  | 음성\n잠혈 | 음성 |  | 음성\n빌리루빈 | 음성 |  | 음성\n우로빌리노겐 | 0.5 | mg/dL | 0.2–1.0\n아질산염 | 음성 |  | 음성\n백혈구 에스터라제 | 음성 |  | 음성\n적혈구 | 1 | /HPF | 0–2\n백혈구 | 6 | /HPF | 0–5\n편평상피세포 | 다수(>15/LPF) | /LPF | 0–소수\n세균 | 중등도 |  | 없음\n원주 | 없음 | /LPF | 없음\n결정 | 없음 |  | 없음",
+  "prompt": "먼저 보고서를 내부적으로 영어로 번역하고 영어로 추론한 뒤, 최종 답변은 한국어로 작성하세요.\n\n질문: What is the most appropriate interpretation? A–D 중 하나만 고르고 한 문장으로 근거를 쓰세요.\nA. Specimen contaminated by genital flora; repeat with clean-catch midstream collection\nB. Urinary tract infection; treat\nC. Vaginitis; refer to gynaecology\nD. Normal urinalysis"
+ },
+ "open_direct": {
+  "report": "검사 결과 보고서\n환자: 나이 48, 성별 여\n임상 소견: Routine check; no symptoms.\n검사항목 | 결과 | 단위 | 참고치\n색깔 | 노란색 |  | 노란색\n혼탁도 | 맑음 |  | 맑음\n비중 | 1.015 |  | 1.005–1.030\npH | 6.0 |  | 4.5–8.0\n단백 | 음성 |  | 음성\n포도당 | 음성 |  | 음성\n케톤 | 음성 |  | 음성\n잠혈 | 음성 |  | 음성\n빌리루빈 | 음성 |  | 음성\n우로빌리노겐 | 0.5 | mg/dL | 0.2–1.0\n아질산염 | 음성 |  | 음성\n백혈구 에스터라제 | 음성 |  | 음성\n적혈구 | 1 | /HPF | 0–2\n백혈구 | 6 | /HPF | 0–5\n편평상피세포 | 다수(>15/LPF) | /LPF | 0–소수\n세균 | 중등도 |  | 없음\n원주 | 없음 | /LPF | 없음\n결정 | 없음 |  | 없음",
+  "prompt": "담당 의사를 위해 이 검사 결과를 해석해 주세요: (1) 주요 이상 소견을 나열하고, (2) 가장 가능성 높은 해석을 제시하고, (3) 다음 단계를 권고하세요. 150단어 이내로 간결하게 쓰세요."
+ },
+ "open_translate": {
+  "report": "검사 결과 보고서\n환자: 나이 48, 성별 여\n임상 소견: Routine check; no symptoms.\n검사항목 | 결과 | 단위 | 참고치\n색깔 | 노란색 |  | 노란색\n혼탁도 | 맑음 |  | 맑음\n비중 | 1.015 |  | 1.005–1.030\npH | 6.0 |  | 4.5–8.0\n단백 | 음성 |  | 음성\n포도당 | 음성 |  | 음성\n케톤 | 음성 |  | 음성\n잠혈 | 음성 |  | 음성\n빌리루빈 | 음성 |  | 음성\n우로빌리노겐 | 0.5 | mg/dL | 0.2–1.0\n아질산염 | 음성 |  | 음성\n백혈구 에스터라제 | 음성 |  | 음성\n적혈구 | 1 | /HPF | 0–2\n백혈구 | 6 | /HPF | 0–5\n편평상피세포 | 다수(>15/LPF) | /LPF | 0–소수\n세균 | 중등도 |  | 없음\n원주 | 없음 | /LPF | 없음\n결정 | 없음 |  | 없음",
+  "prompt": "먼저 보고서를 내부적으로 영어로 번역하고 영어로 추론한 뒤, 최종 답변은 한국어로 작성하세요.\n\n담당 의사를 위해 이 검사 결과를 해석해 주세요: (1) 주요 이상 소견을 나열하고, (2) 가장 가능성 높은 해석을 제시하고, (3) 다음 단계를 권고하세요. 150단어 이내로 간결하게 쓰세요."
+ }
+}

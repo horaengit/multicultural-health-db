@@ -1,0 +1,20 @@
+{
+ "case_id": "PSA02",
+ "lang": "en",
+ "closed_direct": {
+  "report": "LABORATORY REPORT\nPatient: Age 70, Sex Male\nClinical context: Annual check; asymptomatic.\nAnalyte | Result | Unit | Reference\nTotal PSA | 1.2 | ng/mL | <4.0",
+  "prompt": "Question: What is the most appropriate interpretation? Choose ONE option (A–D) and give a one-sentence justification.\nA. PSA within reference limits; continue age-appropriate screening decisions\nB. Prostate cancer likely\nC. Prostatitis\nD. Repeat in one month"
+ },
+ "closed_translate": {
+  "report": "LABORATORY REPORT\nPatient: Age 70, Sex Male\nClinical context: Annual check; asymptomatic.\nAnalyte | Result | Unit | Reference\nTotal PSA | 1.2 | ng/mL | <4.0",
+  "prompt": "Question: What is the most appropriate interpretation? Choose ONE option (A–D) and give a one-sentence justification.\nA. PSA within reference limits; continue age-appropriate screening decisions\nB. Prostate cancer likely\nC. Prostatitis\nD. Repeat in one month"
+ },
+ "open_direct": {
+  "report": "LABORATORY REPORT\nPatient: Age 70, Sex Male\nClinical context: Annual check; asymptomatic.\nAnalyte | Result | Unit | Reference\nTotal PSA | 1.2 | ng/mL | <4.0",
+  "prompt": "Please interpret this laboratory report for the treating clinician: (1) list the key abnormal findings, (2) give the most likely interpretation, (3) recommend the next step. Be concise (under 150 words)."
+ },
+ "open_translate": {
+  "report": "LABORATORY REPORT\nPatient: Age 70, Sex Male\nClinical context: Annual check; asymptomatic.\nAnalyte | Result | Unit | Reference\nTotal PSA | 1.2 | ng/mL | <4.0",
+  "prompt": "Please interpret this laboratory report for the treating clinician: (1) list the key abnormal findings, (2) give the most likely interpretation, (3) recommend the next step. Be concise (under 150 words)."
+ }
+}

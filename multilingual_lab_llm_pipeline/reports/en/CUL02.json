@@ -1,0 +1,20 @@
+{
+ "case_id": "CUL02",
+ "lang": "en",
+ "closed_direct": {
+  "report": "LABORATORY REPORT\nPatient: Age 25, Sex Female\nClinical context: No symptoms; sample from a routine health check.\nAnalyte | Result | Unit | Reference\nUrine culture | Mixed growth of 3 organisms, 1,000–10,000 CFU/mL |  | No growth / <10,000 CFU/mL",
+  "prompt": "Question: What is the most appropriate interpretation? Choose ONE option (A–D) and give a one-sentence justification.\nA. Probable contamination; not clinically significant\nB. Urinary tract infection; treat\nC. Polymicrobial pyelonephritis\nD. Fungal infection"
+ },
+ "closed_translate": {
+  "report": "LABORATORY REPORT\nPatient: Age 25, Sex Female\nClinical context: No symptoms; sample from a routine health check.\nAnalyte | Result | Unit | Reference\nUrine culture | Mixed growth of 3 organisms, 1,000–10,000 CFU/mL |  | No growth / <10,000 CFU/mL",
+  "prompt": "Question: What is the most appropriate interpretation? Choose ONE option (A–D) and give a one-sentence justification.\nA. Probable contamination; not clinically significant\nB. Urinary tract infection; treat\nC. Polymicrobial pyelonephritis\nD. Fungal infection"
+ },
+ "open_direct": {
+  "report": "LABORATORY REPORT\nPatient: Age 25, Sex Female\nClinical context: No symptoms; sample from a routine health check.\nAnalyte | Result | Unit | Reference\nUrine culture | Mixed growth of 3 organisms, 1,000–10,000 CFU/mL |  | No growth / <10,000 CFU/mL",
+  "prompt": "Please interpret this laboratory report for the treating clinician: (1) list the key abnormal findings, (2) give the most likely interpretation, (3) recommend the next step. Be concise (under 150 words)."
+ },
+ "open_translate": {
+  "report": "LABORATORY REPORT\nPatient: Age 25, Sex Female\nClinical context: No symptoms; sample from a routine health check.\nAnalyte | Result | Unit | Reference\nUrine culture | Mixed growth of 3 organisms, 1,000–10,000 CFU/mL |  | No growth / <10,000 CFU/mL",
+  "prompt": "Please interpret this laboratory report for the treating clinician: (1) list the key abnormal findings, (2) give the most likely interpretation, (3) recommend the next step. Be concise (under 150 words)."
+ }
+}

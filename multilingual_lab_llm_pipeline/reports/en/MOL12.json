@@ -1,0 +1,20 @@
+{
+ "case_id": "MOL12",
+ "lang": "en",
+ "closed_direct": {
+  "report": "LABORATORY REPORT\nPatient: Age 66, Sex Male\nClinical context: Metastatic colorectal cancer; planning first-line therapy.\nAnalyte | Result | Unit | Reference\nKRAS/NRAS mutation (tumour tissue, NGS) | KRAS G12D detected |  | Wild type\nBRAF V600E | Not detected |  | Not detected",
+  "prompt": "Question: What is the most appropriate interpretation? Choose ONE option (A–D) and give a one-sentence justification.\nA. RAS-mutant tumour; anti-EGFR antibodies (cetuximab, panitumumab) are not indicated\nB. Anti-EGFR therapy is the preferred option\nC. Tumour is BRAF-mutant\nD. No molecular finding of relevance"
+ },
+ "closed_translate": {
+  "report": "LABORATORY REPORT\nPatient: Age 66, Sex Male\nClinical context: Metastatic colorectal cancer; planning first-line therapy.\nAnalyte | Result | Unit | Reference\nKRAS/NRAS mutation (tumour tissue, NGS) | KRAS G12D detected |  | Wild type\nBRAF V600E | Not detected |  | Not detected",
+  "prompt": "Question: What is the most appropriate interpretation? Choose ONE option (A–D) and give a one-sentence justification.\nA. RAS-mutant tumour; anti-EGFR antibodies (cetuximab, panitumumab) are not indicated\nB. Anti-EGFR therapy is the preferred option\nC. Tumour is BRAF-mutant\nD. No molecular finding of relevance"
+ },
+ "open_direct": {
+  "report": "LABORATORY REPORT\nPatient: Age 66, Sex Male\nClinical context: Metastatic colorectal cancer; planning first-line therapy.\nAnalyte | Result | Unit | Reference\nKRAS/NRAS mutation (tumour tissue, NGS) | KRAS G12D detected |  | Wild type\nBRAF V600E | Not detected |  | Not detected",
+  "prompt": "Please interpret this laboratory report for the treating clinician: (1) list the key abnormal findings, (2) give the most likely interpretation, (3) recommend the next step. Be concise (under 150 words)."
+ },
+ "open_translate": {
+  "report": "LABORATORY REPORT\nPatient: Age 66, Sex Male\nClinical context: Metastatic colorectal cancer; planning first-line therapy.\nAnalyte | Result | Unit | Reference\nKRAS/NRAS mutation (tumour tissue, NGS) | KRAS G12D detected |  | Wild type\nBRAF V600E | Not detected |  | Not detected",
+  "prompt": "Please interpret this laboratory report for the treating clinician: (1) list the key abnormal findings, (2) give the most likely interpretation, (3) recommend the next step. Be concise (under 150 words)."
+ }
+}

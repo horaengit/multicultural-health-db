@@ -1,0 +1,20 @@
+{
+ "case_id": "MOL06",
+ "lang": "en",
+ "closed_direct": {
+  "report": "LABORATORY REPORT\nPatient: Age 63, Sex Female\nClinical context: Lung adenocarcinoma with EGFR exon 19 deletion; progression on first-generation EGFR TKI.\nAnalyte | Result | Unit | Reference\nEGFR mutation (plasma cfDNA, PCR) | T790M detected |  | Not detected",
+  "prompt": "Question: What is the most appropriate interpretation? Choose ONE option (A–D) and give a one-sentence justification.\nA. Acquired T790M resistance mutation; osimertinib is the standard next-line therapy\nB. No actionable finding\nC. Continue the same TKI\nD. Result indicates cure"
+ },
+ "closed_translate": {
+  "report": "LABORATORY REPORT\nPatient: Age 63, Sex Female\nClinical context: Lung adenocarcinoma with EGFR exon 19 deletion; progression on first-generation EGFR TKI.\nAnalyte | Result | Unit | Reference\nEGFR mutation (plasma cfDNA, PCR) | T790M detected |  | Not detected",
+  "prompt": "Question: What is the most appropriate interpretation? Choose ONE option (A–D) and give a one-sentence justification.\nA. Acquired T790M resistance mutation; osimertinib is the standard next-line therapy\nB. No actionable finding\nC. Continue the same TKI\nD. Result indicates cure"
+ },
+ "open_direct": {
+  "report": "LABORATORY REPORT\nPatient: Age 63, Sex Female\nClinical context: Lung adenocarcinoma with EGFR exon 19 deletion; progression on first-generation EGFR TKI.\nAnalyte | Result | Unit | Reference\nEGFR mutation (plasma cfDNA, PCR) | T790M detected |  | Not detected",
+  "prompt": "Please interpret this laboratory report for the treating clinician: (1) list the key abnormal findings, (2) give the most likely interpretation, (3) recommend the next step. Be concise (under 150 words)."
+ },
+ "open_translate": {
+  "report": "LABORATORY REPORT\nPatient: Age 63, Sex Female\nClinical context: Lung adenocarcinoma with EGFR exon 19 deletion; progression on first-generation EGFR TKI.\nAnalyte | Result | Unit | Reference\nEGFR mutation (plasma cfDNA, PCR) | T790M detected |  | Not detected",
+  "prompt": "Please interpret this laboratory report for the treating clinician: (1) list the key abnormal findings, (2) give the most likely interpretation, (3) recommend the next step. Be concise (under 150 words)."
+ }
+}

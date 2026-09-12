@@ -1,0 +1,20 @@
+{
+ "case_id": "MOL11",
+ "lang": "en",
+ "closed_direct": {
+  "report": "LABORATORY REPORT\nPatient: Age 60, Sex Male\nClinical context: Haemoglobin 19.5 g/dL, haematocrit 58%; erythropoietin low.\nAnalyte | Result | Unit | Reference\nJAK2 V617F (allele-specific PCR) | Positive, allele burden 42% |  | Not detected",
+  "prompt": "Question: What is the most appropriate interpretation? Choose ONE option (A–D) and give a one-sentence justification.\nA. Polycythaemia vera is very likely; haematology referral\nB. Secondary polycythaemia\nC. Normal finding\nD. Iron deficiency"
+ },
+ "closed_translate": {
+  "report": "LABORATORY REPORT\nPatient: Age 60, Sex Male\nClinical context: Haemoglobin 19.5 g/dL, haematocrit 58%; erythropoietin low.\nAnalyte | Result | Unit | Reference\nJAK2 V617F (allele-specific PCR) | Positive, allele burden 42% |  | Not detected",
+  "prompt": "Question: What is the most appropriate interpretation? Choose ONE option (A–D) and give a one-sentence justification.\nA. Polycythaemia vera is very likely; haematology referral\nB. Secondary polycythaemia\nC. Normal finding\nD. Iron deficiency"
+ },
+ "open_direct": {
+  "report": "LABORATORY REPORT\nPatient: Age 60, Sex Male\nClinical context: Haemoglobin 19.5 g/dL, haematocrit 58%; erythropoietin low.\nAnalyte | Result | Unit | Reference\nJAK2 V617F (allele-specific PCR) | Positive, allele burden 42% |  | Not detected",
+  "prompt": "Please interpret this laboratory report for the treating clinician: (1) list the key abnormal findings, (2) give the most likely interpretation, (3) recommend the next step. Be concise (under 150 words)."
+ },
+ "open_translate": {
+  "report": "LABORATORY REPORT\nPatient: Age 60, Sex Male\nClinical context: Haemoglobin 19.5 g/dL, haematocrit 58%; erythropoietin low.\nAnalyte | Result | Unit | Reference\nJAK2 V617F (allele-specific PCR) | Positive, allele burden 42% |  | Not detected",
+  "prompt": "Please interpret this laboratory report for the treating clinician: (1) list the key abnormal findings, (2) give the most likely interpretation, (3) recommend the next step. Be concise (under 150 words)."
+ }
+}

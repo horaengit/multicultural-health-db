@@ -1,0 +1,20 @@
+{
+ "case_id": "MOL15",
+ "lang": "en",
+ "closed_direct": {
+  "report": "LABORATORY REPORT\nPatient: Age 23, Sex Male\nClinical context: Urethral discharge; sexual contact two weeks ago.\nAnalyte | Result | Unit | Reference\nChlamydia trachomatis NAAT (first-void urine) | Detected |  | Not detected\nNeisseria gonorrhoeae NAAT (first-void urine) | Not detected |  | Not detected",
+  "prompt": "Question: What is the most appropriate interpretation? Choose ONE option (A–D) and give a one-sentence justification.\nA. Chlamydial urethritis; treat (doxycycline) and notify partners\nB. No infection\nC. Gonococcal urethritis; give ceftriaxone\nD. Urinary tract infection; give nitrofurantoin"
+ },
+ "closed_translate": {
+  "report": "LABORATORY REPORT\nPatient: Age 23, Sex Male\nClinical context: Urethral discharge; sexual contact two weeks ago.\nAnalyte | Result | Unit | Reference\nChlamydia trachomatis NAAT (first-void urine) | Detected |  | Not detected\nNeisseria gonorrhoeae NAAT (first-void urine) | Not detected |  | Not detected",
+  "prompt": "Question: What is the most appropriate interpretation? Choose ONE option (A–D) and give a one-sentence justification.\nA. Chlamydial urethritis; treat (doxycycline) and notify partners\nB. No infection\nC. Gonococcal urethritis; give ceftriaxone\nD. Urinary tract infection; give nitrofurantoin"
+ },
+ "open_direct": {
+  "report": "LABORATORY REPORT\nPatient: Age 23, Sex Male\nClinical context: Urethral discharge; sexual contact two weeks ago.\nAnalyte | Result | Unit | Reference\nChlamydia trachomatis NAAT (first-void urine) | Detected |  | Not detected\nNeisseria gonorrhoeae NAAT (first-void urine) | Not detected |  | Not detected",
+  "prompt": "Please interpret this laboratory report for the treating clinician: (1) list the key abnormal findings, (2) give the most likely interpretation, (3) recommend the next step. Be concise (under 150 words)."
+ },
+ "open_translate": {
+  "report": "LABORATORY REPORT\nPatient: Age 23, Sex Male\nClinical context: Urethral discharge; sexual contact two weeks ago.\nAnalyte | Result | Unit | Reference\nChlamydia trachomatis NAAT (first-void urine) | Detected |  | Not detected\nNeisseria gonorrhoeae NAAT (first-void urine) | Not detected |  | Not detected",
+  "prompt": "Please interpret this laboratory report for the treating clinician: (1) list the key abnormal findings, (2) give the most likely interpretation, (3) recommend the next step. Be concise (under 150 words)."
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "case_id": "UA06",
+ "lang": "en",
+ "closed_direct": {
+  "report": "LABORATORY REPORT\nPatient: Age 6, Sex Male\nClinical context: Generalised oedema; serum albumin 1.8 g/dL.\nAnalyte | Result | Unit | Reference\nColor | Yellow |  | Yellow\nClarity | Clear |  | Clear\nSpecific gravity | 1.025 |  | 1.005–1.030\npH | 6.0 |  | 4.5–8.0\nProtein | 4+ |  | Negative\nGlucose | Negative |  | Negative\nKetones | Negative |  | Negative\nBlood | Negative |  | Negative\nBilirubin | Negative |  | Negative\nUrobilinogen | 0.5 | mg/dL | 0.2–1.0\nNitrite | Negative |  | Negative\nLeukocyte esterase | Negative |  | Negative\nRBC | 1 | /HPF | 0–2\nWBC | 2 | /HPF | 0–5\nSquamous epithelial cells | Few | /LPF | 0–few\nBacteria | None |  | None\nCasts | Fatty casts present | /LPF | None\nCrystals | None |  | None",
+  "prompt": "Question: What is the most likely interpretation? Choose ONE option (A–D) and give a one-sentence justification.\nA. Nephrotic syndrome\nB. Urinary tract infection\nC. Diabetic ketoacidosis\nD. Normal urinalysis"
+ },
+ "closed_translate": {
+  "report": "LABORATORY REPORT\nPatient: Age 6, Sex Male\nClinical context: Generalised oedema; serum albumin 1.8 g/dL.\nAnalyte | Result | Unit | Reference\nColor | Yellow |  | Yellow\nClarity | Clear |  | Clear\nSpecific gravity | 1.025 |  | 1.005–1.030\npH | 6.0 |  | 4.5–8.0\nProtein | 4+ |  | Negative\nGlucose | Negative |  | Negative\nKetones | Negative |  | Negative\nBlood | Negative |  | Negative\nBilirubin | Negative |  | Negative\nUrobilinogen | 0.5 | mg/dL | 0.2–1.0\nNitrite | Negative |  | Negative\nLeukocyte esterase | Negative |  | Negative\nRBC | 1 | /HPF | 0–2\nWBC | 2 | /HPF | 0–5\nSquamous epithelial cells | Few | /LPF | 0–few\nBacteria | None |  | None\nCasts | Fatty casts present | /LPF | None\nCrystals | None |  | None",
+  "prompt": "Question: What is the most likely interpretation? Choose ONE option (A–D) and give a one-sentence justification.\nA. Nephrotic syndrome\nB. Urinary tract infection\nC. Diabetic ketoacidosis\nD. Normal urinalysis"
+ },
+ "open_direct": {
+  "report": "LABORATORY REPORT\nPatient: Age 6, Sex Male\nClinical context: Generalised oedema; serum albumin 1.8 g/dL.\nAnalyte | Result | Unit | Reference\nColor | Yellow |  | Yellow\nClarity | Clear |  | Clear\nSpecific gravity | 1.025 |  | 1.005–1.030\npH | 6.0 |  | 4.5–8.0\nProtein | 4+ |  | Negative\nGlucose | Negative |  | Negative\nKetones | Negative |  | Negative\nBlood | Negative |  | Negative\nBilirubin | Negative |  | Negative\nUrobilinogen | 0.5 | mg/dL | 0.2–1.0\nNitrite | Negative |  | Negative\nLeukocyte esterase | Negative |  | Negative\nRBC | 1 | /HPF | 0–2\nWBC | 2 | /HPF | 0–5\nSquamous epithelial cells | Few | /LPF | 0–few\nBacteria | None |  | None\nCasts | Fatty casts present | /LPF | None\nCrystals | None |  | None",
+  "prompt": "Please interpret this laboratory report for the treating clinician: (1) list the key abnormal findings, (2) give the most likely interpretation, (3) recommend the next step. Be concise (under 150 words)."
+ },
+ "open_translate": {
+  "report": "LABORATORY REPORT\nPatient: Age 6, Sex Male\nClinical context: Generalised oedema; serum albumin 1.8 g/dL.\nAnalyte | Result | Unit | Reference\nColor | Yellow |  | Yellow\nClarity | Clear |  | Clear\nSpecific gravity | 1.025 |  | 1.005–1.030\npH | 6.0 |  | 4.5–8.0\nProtein | 4+ |  | Negative\nGlucose | Negative |  | Negative\nKetones | Negative |  | Negative\nBlood | Negative |  | Negative\nBilirubin | Negative |  | Negative\nUrobilinogen | 0.5 | mg/dL | 0.2–1.0\nNitrite | Negative |  | Negative\nLeukocyte esterase | Negative |  | Negative\nRBC | 1 | /HPF | 0–2\nWBC | 2 | /HPF | 0–5\nSquamous epithelial cells | Few | /LPF | 0–few\nBacteria | None |  | None\nCasts | Fatty casts present | /LPF | None\nCrystals | None |  | None",
+  "prompt": "Please interpret this laboratory report for the treating clinician: (1) list the key abnormal findings, (2) give the most likely interpretation, (3) recommend the next step. Be concise (under 150 words)."
+ }
+}

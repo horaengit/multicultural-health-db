@@ -1,0 +1,20 @@
+{
+ "case_id": "MOL10",
+ "lang": "en",
+ "closed_direct": {
+  "report": "LABORATORY REPORT\nPatient: Age 38, Sex Female\nClinical context: Unprovoked deep-vein thrombosis.\nAnalyte | Result | Unit | Reference\nFactor V Leiden (F5 c.1691G>A) | Heterozygous |  | Not detected",
+  "prompt": "Question: What is the most appropriate interpretation? Choose ONE option (A–D) and give a one-sentence justification.\nA. Heterozygous factor V Leiden modestly increases thrombosis risk; management of the current DVT follows standard anticoagulation and does not usually change because of this result\nB. Homozygous thrombophilia requiring lifelong anticoagulation\nC. No thrombophilia\nD. Result indicates bleeding disorder"
+ },
+ "closed_translate": {
+  "report": "LABORATORY REPORT\nPatient: Age 38, Sex Female\nClinical context: Unprovoked deep-vein thrombosis.\nAnalyte | Result | Unit | Reference\nFactor V Leiden (F5 c.1691G>A) | Heterozygous |  | Not detected",
+  "prompt": "Question: What is the most appropriate interpretation? Choose ONE option (A–D) and give a one-sentence justification.\nA. Heterozygous factor V Leiden modestly increases thrombosis risk; management of the current DVT follows standard anticoagulation and does not usually change because of this result\nB. Homozygous thrombophilia requiring lifelong anticoagulation\nC. No thrombophilia\nD. Result indicates bleeding disorder"
+ },
+ "open_direct": {
+  "report": "LABORATORY REPORT\nPatient: Age 38, Sex Female\nClinical context: Unprovoked deep-vein thrombosis.\nAnalyte | Result | Unit | Reference\nFactor V Leiden (F5 c.1691G>A) | Heterozygous |  | Not detected",
+  "prompt": "Please interpret this laboratory report for the treating clinician: (1) list the key abnormal findings, (2) give the most likely interpretation, (3) recommend the next step. Be concise (under 150 words)."
+ },
+ "open_translate": {
+  "report": "LABORATORY REPORT\nPatient: Age 38, Sex Female\nClinical context: Unprovoked deep-vein thrombosis.\nAnalyte | Result | Unit | Reference\nFactor V Leiden (F5 c.1691G>A) | Heterozygous |  | Not detected",
+  "prompt": "Please interpret this laboratory report for the treating clinician: (1) list the key abnormal findings, (2) give the most likely interpretation, (3) recommend the next step. Be concise (under 150 words)."
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "case_id": "MOL08",
+ "lang": "en",
+ "closed_direct": {
+  "report": "LABORATORY REPORT\nPatient: Age 44, Sex Female\nClinical context: Breast cancer at 38; mother with ovarian cancer.\nAnalyte | Result | Unit | Reference\nBRCA1 (germline sequencing) | Pathogenic variant c.68_69delAG (p.Glu23ValfsTer17) |  | No pathogenic variant",
+  "prompt": "Question: What is the most appropriate interpretation? Choose ONE option (A–D) and give a one-sentence justification.\nA. Hereditary breast and ovarian cancer syndrome; genetic counselling, risk-reducing strategies and cascade testing of relatives\nB. Variant of uncertain significance; no action\nC. Benign polymorphism\nD. Result confirms cancer is cured"
+ },
+ "closed_translate": {
+  "report": "LABORATORY REPORT\nPatient: Age 44, Sex Female\nClinical context: Breast cancer at 38; mother with ovarian cancer.\nAnalyte | Result | Unit | Reference\nBRCA1 (germline sequencing) | Pathogenic variant c.68_69delAG (p.Glu23ValfsTer17) |  | No pathogenic variant",
+  "prompt": "Question: What is the most appropriate interpretation? Choose ONE option (A–D) and give a one-sentence justification.\nA. Hereditary breast and ovarian cancer syndrome; genetic counselling, risk-reducing strategies and cascade testing of relatives\nB. Variant of uncertain significance; no action\nC. Benign polymorphism\nD. Result confirms cancer is cured"
+ },
+ "open_direct": {
+  "report": "LABORATORY REPORT\nPatient: Age 44, Sex Female\nClinical context: Breast cancer at 38; mother with ovarian cancer.\nAnalyte | Result | Unit | Reference\nBRCA1 (germline sequencing) | Pathogenic variant c.68_69delAG (p.Glu23ValfsTer17) |  | No pathogenic variant",
+  "prompt": "Please interpret this laboratory report for the treating clinician: (1) list the key abnormal findings, (2) give the most likely interpretation, (3) recommend the next step. Be concise (under 150 words)."
+ },
+ "open_translate": {
+  "report": "LABORATORY REPORT\nPatient: Age 44, Sex Female\nClinical context: Breast cancer at 38; mother with ovarian cancer.\nAnalyte | Result | Unit | Reference\nBRCA1 (germline sequencing) | Pathogenic variant c.68_69delAG (p.Glu23ValfsTer17) |  | No pathogenic variant",
+  "prompt": "Please interpret this laboratory report for the treating clinician: (1) list the key abnormal findings, (2) give the most likely interpretation, (3) recommend the next step. Be concise (under 150 words)."
+ }
+}

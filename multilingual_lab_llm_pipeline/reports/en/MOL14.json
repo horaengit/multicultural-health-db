@@ -1,0 +1,20 @@
+{
+ "case_id": "MOL14",
+ "lang": "en",
+ "closed_direct": {
+  "report": "LABORATORY REPORT\nPatient: Age 71, Sex Male\nClinical context: History of bladder cancer; surveillance cystoscopy equivocal.\nAnalyte | Result | Unit | Reference\nUrine FISH (chromosomes 3, 7, 17 and 9p21) | Positive (polysomy in 12% of cells) |  | Negative\nUrine cytology | Atypical urothelial cells |  | Negative",
+  "prompt": "Question: What is the most appropriate interpretation? Choose ONE option (A–D) and give a one-sentence justification.\nA. Positive FISH with atypical cytology indicates likely recurrence; biopsy of suspicious area and/or enhanced cystoscopy\nB. Negative surveillance; continue routine follow-up\nC. Findings indicate benign inflammation\nD. Result cannot be interpreted"
+ },
+ "closed_translate": {
+  "report": "LABORATORY REPORT\nPatient: Age 71, Sex Male\nClinical context: History of bladder cancer; surveillance cystoscopy equivocal.\nAnalyte | Result | Unit | Reference\nUrine FISH (chromosomes 3, 7, 17 and 9p21) | Positive (polysomy in 12% of cells) |  | Negative\nUrine cytology | Atypical urothelial cells |  | Negative",
+  "prompt": "Question: What is the most appropriate interpretation? Choose ONE option (A–D) and give a one-sentence justification.\nA. Positive FISH with atypical cytology indicates likely recurrence; biopsy of suspicious area and/or enhanced cystoscopy\nB. Negative surveillance; continue routine follow-up\nC. Findings indicate benign inflammation\nD. Result cannot be interpreted"
+ },
+ "open_direct": {
+  "report": "LABORATORY REPORT\nPatient: Age 71, Sex Male\nClinical context: History of bladder cancer; surveillance cystoscopy equivocal.\nAnalyte | Result | Unit | Reference\nUrine FISH (chromosomes 3, 7, 17 and 9p21) | Positive (polysomy in 12% of cells) |  | Negative\nUrine cytology | Atypical urothelial cells |  | Negative",
+  "prompt": "Please interpret this laboratory report for the treating clinician: (1) list the key abnormal findings, (2) give the most likely interpretation, (3) recommend the next step. Be concise (under 150 words)."
+ },
+ "open_translate": {
+  "report": "LABORATORY REPORT\nPatient: Age 71, Sex Male\nClinical context: History of bladder cancer; surveillance cystoscopy equivocal.\nAnalyte | Result | Unit | Reference\nUrine FISH (chromosomes 3, 7, 17 and 9p21) | Positive (polysomy in 12% of cells) |  | Negative\nUrine cytology | Atypical urothelial cells |  | Negative",
+  "prompt": "Please interpret this laboratory report for the treating clinician: (1) list the key abnormal findings, (2) give the most likely interpretation, (3) recommend the next step. Be concise (under 150 words)."
+ }
+}

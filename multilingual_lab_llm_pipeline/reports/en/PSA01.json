@@ -1,0 +1,20 @@
+{
+ "case_id": "PSA01",
+ "lang": "en",
+ "closed_direct": {
+  "report": "LABORATORY REPORT\nPatient: Age 62, Sex Male\nClinical context: Routine screening; no lower urinary tract symptoms; digital rectal examination normal.\nAnalyte | Result | Unit | Reference\nTotal PSA | 5.8 | ng/mL | <4.0\nFree PSA | 0.7 | ng/mL | —\nFree/total PSA ratio | 12 | % | >25 lower risk",
+  "prompt": "Question: What is the most appropriate next step? Choose ONE option (A–D) and give a one-sentence justification.\nA. Repeat PSA after several weeks, and if confirmed, discuss further risk assessment (MRI and/or biopsy) with urology\nB. No action; PSA is normal for age\nC. Immediate radical prostatectomy\nD. Start antibiotics and recheck in one year"
+ },
+ "closed_translate": {
+  "report": "LABORATORY REPORT\nPatient: Age 62, Sex Male\nClinical context: Routine screening; no lower urinary tract symptoms; digital rectal examination normal.\nAnalyte | Result | Unit | Reference\nTotal PSA | 5.8 | ng/mL | <4.0\nFree PSA | 0.7 | ng/mL | —\nFree/total PSA ratio | 12 | % | >25 lower risk",
+  "prompt": "Question: What is the most appropriate next step? Choose ONE option (A–D) and give a one-sentence justification.\nA. Repeat PSA after several weeks, and if confirmed, discuss further risk assessment (MRI and/or biopsy) with urology\nB. No action; PSA is normal for age\nC. Immediate radical prostatectomy\nD. Start antibiotics and recheck in one year"
+ },
+ "open_direct": {
+  "report": "LABORATORY REPORT\nPatient: Age 62, Sex Male\nClinical context: Routine screening; no lower urinary tract symptoms; digital rectal examination normal.\nAnalyte | Result | Unit | Reference\nTotal PSA | 5.8 | ng/mL | <4.0\nFree PSA | 0.7 | ng/mL | —\nFree/total PSA ratio | 12 | % | >25 lower risk",
+  "prompt": "Please interpret this laboratory report for the treating clinician: (1) list the key abnormal findings, (2) give the most likely interpretation, (3) recommend the next step. Be concise (under 150 words)."
+ },
+ "open_translate": {
+  "report": "LABORATORY REPORT\nPatient: Age 62, Sex Male\nClinical context: Routine screening; no lower urinary tract symptoms; digital rectal examination normal.\nAnalyte | Result | Unit | Reference\nTotal PSA | 5.8 | ng/mL | <4.0\nFree PSA | 0.7 | ng/mL | —\nFree/total PSA ratio | 12 | % | >25 lower risk",
+  "prompt": "Please interpret this laboratory report for the treating clinician: (1) list the key abnormal findings, (2) give the most likely interpretation, (3) recommend the next step. Be concise (under 150 words)."
+ }
+}

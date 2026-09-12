@@ -1,0 +1,20 @@
+{
+ "case_id": "MOL09",
+ "lang": "en",
+ "closed_direct": {
+  "report": "LABORATORY REPORT\nPatient: Age 22, Sex Male\nClinical context: Low back pain that improves with exercise; morning stiffness > 1 hour.\nAnalyte | Result | Unit | Reference\nHLA-B27 | Positive |  | Negative",
+  "prompt": "Question: What is the most appropriate interpretation? Choose ONE option (A–D) and give a one-sentence justification.\nA. Supports but does not confirm axial spondyloarthritis; correlate with imaging and clinical criteria\nB. Confirms ankylosing spondylitis\nC. Excludes spondyloarthritis\nD. Indicates rheumatoid arthritis"
+ },
+ "closed_translate": {
+  "report": "LABORATORY REPORT\nPatient: Age 22, Sex Male\nClinical context: Low back pain that improves with exercise; morning stiffness > 1 hour.\nAnalyte | Result | Unit | Reference\nHLA-B27 | Positive |  | Negative",
+  "prompt": "Question: What is the most appropriate interpretation? Choose ONE option (A–D) and give a one-sentence justification.\nA. Supports but does not confirm axial spondyloarthritis; correlate with imaging and clinical criteria\nB. Confirms ankylosing spondylitis\nC. Excludes spondyloarthritis\nD. Indicates rheumatoid arthritis"
+ },
+ "open_direct": {
+  "report": "LABORATORY REPORT\nPatient: Age 22, Sex Male\nClinical context: Low back pain that improves with exercise; morning stiffness > 1 hour.\nAnalyte | Result | Unit | Reference\nHLA-B27 | Positive |  | Negative",
+  "prompt": "Please interpret this laboratory report for the treating clinician: (1) list the key abnormal findings, (2) give the most likely interpretation, (3) recommend the next step. Be concise (under 150 words)."
+ },
+ "open_translate": {
+  "report": "LABORATORY REPORT\nPatient: Age 22, Sex Male\nClinical context: Low back pain that improves with exercise; morning stiffness > 1 hour.\nAnalyte | Result | Unit | Reference\nHLA-B27 | Positive |  | Negative",
+  "prompt": "Please interpret this laboratory report for the treating clinician: (1) list the key abnormal findings, (2) give the most likely interpretation, (3) recommend the next step. Be concise (under 150 words)."
+ }
+}

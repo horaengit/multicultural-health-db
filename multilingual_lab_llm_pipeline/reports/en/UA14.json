@@ -1,0 +1,20 @@
+{
+ "case_id": "UA14",
+ "lang": "en",
+ "closed_direct": {
+  "report": "LABORATORY REPORT\nPatient: Age 61, Sex Female\nClinical context: Type 2 diabetes for 12 years; annual screening.\nAnalyte | Result | Unit | Reference\nUrine albumin | 245 | mg/L | <20\nUrine creatinine | 70 | mg/dL | —\nAlbumin-to-creatinine ratio | 350 | mg/g | <30",
+  "prompt": "Question: What is the most appropriate interpretation? Choose ONE option (A–D) and give a one-sentence justification.\nA. Severely increased albuminuria (A3); diabetic kidney disease likely — confirm and treat\nB. Normal albumin excretion\nC. Moderately increased albuminuria (A2)\nD. Result cannot be interpreted"
+ },
+ "closed_translate": {
+  "report": "LABORATORY REPORT\nPatient: Age 61, Sex Female\nClinical context: Type 2 diabetes for 12 years; annual screening.\nAnalyte | Result | Unit | Reference\nUrine albumin | 245 | mg/L | <20\nUrine creatinine | 70 | mg/dL | —\nAlbumin-to-creatinine ratio | 350 | mg/g | <30",
+  "prompt": "Question: What is the most appropriate interpretation? Choose ONE option (A–D) and give a one-sentence justification.\nA. Severely increased albuminuria (A3); diabetic kidney disease likely — confirm and treat\nB. Normal albumin excretion\nC. Moderately increased albuminuria (A2)\nD. Result cannot be interpreted"
+ },
+ "open_direct": {
+  "report": "LABORATORY REPORT\nPatient: Age 61, Sex Female\nClinical context: Type 2 diabetes for 12 years; annual screening.\nAnalyte | Result | Unit | Reference\nUrine albumin | 245 | mg/L | <20\nUrine creatinine | 70 | mg/dL | —\nAlbumin-to-creatinine ratio | 350 | mg/g | <30",
+  "prompt": "Please interpret this laboratory report for the treating clinician: (1) list the key abnormal findings, (2) give the most likely interpretation, (3) recommend the next step. Be concise (under 150 words)."
+ },
+ "open_translate": {
+  "report": "LABORATORY REPORT\nPatient: Age 61, Sex Female\nClinical context: Type 2 diabetes for 12 years; annual screening.\nAnalyte | Result | Unit | Reference\nUrine albumin | 245 | mg/L | <20\nUrine creatinine | 70 | mg/dL | —\nAlbumin-to-creatinine ratio | 350 | mg/g | <30",
+  "prompt": "Please interpret this laboratory report for the treating clinician: (1) list the key abnormal findings, (2) give the most likely interpretation, (3) recommend the next step. Be concise (under 150 words)."
+ }
+}

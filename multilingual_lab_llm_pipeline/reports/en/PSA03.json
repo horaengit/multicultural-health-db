@@ -1,0 +1,20 @@
+{
+ "case_id": "PSA03",
+ "lang": "en",
+ "closed_direct": {
+  "report": "LABORATORY REPORT\nPatient: Age 68, Sex Male\nClinical context: Bone pain and weight loss; digital rectal examination: hard, nodular prostate.\nAnalyte | Result | Unit | Reference\nTotal PSA | 86 | ng/mL | <4.0\nAlkaline phosphatase | 310 | U/L | 40–130",
+  "prompt": "Question: What is the most appropriate next step? Choose ONE option (A–D) and give a one-sentence justification.\nA. Urgent urology referral for suspected advanced prostate cancer with possible bone metastases\nB. Reassure and repeat in six months\nC. Treat for prostatitis\nD. No action needed"
+ },
+ "closed_translate": {
+  "report": "LABORATORY REPORT\nPatient: Age 68, Sex Male\nClinical context: Bone pain and weight loss; digital rectal examination: hard, nodular prostate.\nAnalyte | Result | Unit | Reference\nTotal PSA | 86 | ng/mL | <4.0\nAlkaline phosphatase | 310 | U/L | 40–130",
+  "prompt": "Question: What is the most appropriate next step? Choose ONE option (A–D) and give a one-sentence justification.\nA. Urgent urology referral for suspected advanced prostate cancer with possible bone metastases\nB. Reassure and repeat in six months\nC. Treat for prostatitis\nD. No action needed"
+ },
+ "open_direct": {
+  "report": "LABORATORY REPORT\nPatient: Age 68, Sex Male\nClinical context: Bone pain and weight loss; digital rectal examination: hard, nodular prostate.\nAnalyte | Result | Unit | Reference\nTotal PSA | 86 | ng/mL | <4.0\nAlkaline phosphatase | 310 | U/L | 40–130",
+  "prompt": "Please interpret this laboratory report for the treating clinician: (1) list the key abnormal findings, (2) give the most likely interpretation, (3) recommend the next step. Be concise (under 150 words)."
+ },
+ "open_translate": {
+  "report": "LABORATORY REPORT\nPatient: Age 68, Sex Male\nClinical context: Bone pain and weight loss; digital rectal examination: hard, nodular prostate.\nAnalyte | Result | Unit | Reference\nTotal PSA | 86 | ng/mL | <4.0\nAlkaline phosphatase | 310 | U/L | 40–130",
+  "prompt": "Please interpret this laboratory report for the treating clinician: (1) list the key abnormal findings, (2) give the most likely interpretation, (3) recommend the next step. Be concise (under 150 words)."
+ }
+}

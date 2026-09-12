@@ -1,0 +1,20 @@
+{
+ "case_id": "MOL01",
+ "lang": "en",
+ "closed_direct": {
+  "report": "LABORATORY REPORT\nPatient: Age 35, Sex Female\nClinical context: Cervical screening; cytology: negative for intraepithelial lesion.\nAnalyte | Result | Unit | Reference\nHigh-risk HPV DNA (PCR) | Positive — HPV 16 |  | Negative",
+  "prompt": "Question: What is the most appropriate next step? Choose ONE option (A–D) and give a one-sentence justification.\nA. Refer for colposcopy\nB. Routine screening in five years\nC. Treat with antiviral therapy\nD. Repeat HPV in one week"
+ },
+ "closed_translate": {
+  "report": "LABORATORY REPORT\nPatient: Age 35, Sex Female\nClinical context: Cervical screening; cytology: negative for intraepithelial lesion.\nAnalyte | Result | Unit | Reference\nHigh-risk HPV DNA (PCR) | Positive — HPV 16 |  | Negative",
+  "prompt": "Question: What is the most appropriate next step? Choose ONE option (A–D) and give a one-sentence justification.\nA. Refer for colposcopy\nB. Routine screening in five years\nC. Treat with antiviral therapy\nD. Repeat HPV in one week"
+ },
+ "open_direct": {
+  "report": "LABORATORY REPORT\nPatient: Age 35, Sex Female\nClinical context: Cervical screening; cytology: negative for intraepithelial lesion.\nAnalyte | Result | Unit | Reference\nHigh-risk HPV DNA (PCR) | Positive — HPV 16 |  | Negative",
+  "prompt": "Please interpret this laboratory report for the treating clinician: (1) list the key abnormal findings, (2) give the most likely interpretation, (3) recommend the next step. Be concise (under 150 words)."
+ },
+ "open_translate": {
+  "report": "LABORATORY REPORT\nPatient: Age 35, Sex Female\nClinical context: Cervical screening; cytology: negative for intraepithelial lesion.\nAnalyte | Result | Unit | Reference\nHigh-risk HPV DNA (PCR) | Positive — HPV 16 |  | Negative",
+  "prompt": "Please interpret this laboratory report for the treating clinician: (1) list the key abnormal findings, (2) give the most likely interpretation, (3) recommend the next step. Be concise (under 150 words)."
+ }
+}

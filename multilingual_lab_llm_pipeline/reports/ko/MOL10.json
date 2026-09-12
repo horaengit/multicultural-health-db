@@ -1,0 +1,20 @@
+{
+ "case_id": "MOL10",
+ "lang": "ko",
+ "closed_direct": {
+  "report": "검사 결과 보고서\n환자: 나이 38, 성별 여\n임상 소견: Unprovoked deep-vein thrombosis.\n검사항목 | 결과 | 단위 | 참고치\nFactor V Leiden (F5 c.1691G>A) | 이형접합 |  | 검출 안 됨",
+  "prompt": "질문: What is the most appropriate interpretation? A–D 중 하나만 고르고 한 문장으로 근거를 쓰세요.\nA. Heterozygous factor V Leiden modestly increases thrombosis risk; management of the current DVT follows standard anticoagulation and does not usually change because of this result\nB. Homozygous thrombophilia requiring lifelong anticoagulation\nC. No thrombophilia\nD. Result indicates bleeding disorder"
+ },
+ "closed_translate": {
+  "report": "검사 결과 보고서\n환자: 나이 38, 성별 여\n임상 소견: Unprovoked deep-vein thrombosis.\n검사항목 | 결과 | 단위 | 참고치\nFactor V Leiden (F5 c.1691G>A) | 이형접합 |  | 검출 안 됨",
+  "prompt": "먼저 보고서를 내부적으로 영어로 번역하고 영어로 추론한 뒤, 최종 답변은 한국어로 작성하세요.\n\n질문: What is the most appropriate interpretation? A–D 중 하나만 고르고 한 문장으로 근거를 쓰세요.\nA. Heterozygous factor V Leiden modestly increases thrombosis risk; management of the current DVT follows standard anticoagulation and does not usually change because of this result\nB. Homozygous thrombophilia requiring lifelong anticoagulation\nC. No thrombophilia\nD. Result indicates bleeding disorder"
+ },
+ "open_direct": {
+  "report": "검사 결과 보고서\n환자: 나이 38, 성별 여\n임상 소견: Unprovoked deep-vein thrombosis.\n검사항목 | 결과 | 단위 | 참고치\nFactor V Leiden (F5 c.1691G>A) | 이형접합 |  | 검출 안 됨",
+  "prompt": "담당 의사를 위해 이 검사 결과를 해석해 주세요: (1) 주요 이상 소견을 나열하고, (2) 가장 가능성 높은 해석을 제시하고, (3) 다음 단계를 권고하세요. 150단어 이내로 간결하게 쓰세요."
+ },
+ "open_translate": {
+  "report": "검사 결과 보고서\n환자: 나이 38, 성별 여\n임상 소견: Unprovoked deep-vein thrombosis.\n검사항목 | 결과 | 단위 | 참고치\nFactor V Leiden (F5 c.1691G>A) | 이형접합 |  | 검출 안 됨",
+  "prompt": "먼저 보고서를 내부적으로 영어로 번역하고 영어로 추론한 뒤, 최종 답변은 한국어로 작성하세요.\n\n담당 의사를 위해 이 검사 결과를 해석해 주세요: (1) 주요 이상 소견을 나열하고, (2) 가장 가능성 높은 해석을 제시하고, (3) 다음 단계를 권고하세요. 150단어 이내로 간결하게 쓰세요."
+ }
+}

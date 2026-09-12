@@ -1,0 +1,20 @@
+{
+ "case_id": "MOL16",
+ "lang": "en",
+ "closed_direct": {
+  "report": "LABORATORY REPORT\nPatient: Age 34, Sex Female\nClinical context: Cough for 6 weeks, night sweats; chest X-ray: right upper-lobe cavity.\nAnalyte | Result | Unit | Reference\nMycobacterium tuberculosis PCR (sputum, Xpert MTB/RIF) | MTB detected (medium); rifampicin resistance NOT detected |  | Not detected",
+  "prompt": "Question: What is the most appropriate interpretation? Choose ONE option (A–D) and give a one-sentence justification.\nA. Pulmonary tuberculosis, rifampicin-susceptible; start standard four-drug therapy and notify public health\nB. Latent tuberculosis\nC. Non-tuberculous mycobacteria\nD. Result is falsely positive"
+ },
+ "closed_translate": {
+  "report": "LABORATORY REPORT\nPatient: Age 34, Sex Female\nClinical context: Cough for 6 weeks, night sweats; chest X-ray: right upper-lobe cavity.\nAnalyte | Result | Unit | Reference\nMycobacterium tuberculosis PCR (sputum, Xpert MTB/RIF) | MTB detected (medium); rifampicin resistance NOT detected |  | Not detected",
+  "prompt": "Question: What is the most appropriate interpretation? Choose ONE option (A–D) and give a one-sentence justification.\nA. Pulmonary tuberculosis, rifampicin-susceptible; start standard four-drug therapy and notify public health\nB. Latent tuberculosis\nC. Non-tuberculous mycobacteria\nD. Result is falsely positive"
+ },
+ "open_direct": {
+  "report": "LABORATORY REPORT\nPatient: Age 34, Sex Female\nClinical context: Cough for 6 weeks, night sweats; chest X-ray: right upper-lobe cavity.\nAnalyte | Result | Unit | Reference\nMycobacterium tuberculosis PCR (sputum, Xpert MTB/RIF) | MTB detected (medium); rifampicin resistance NOT detected |  | Not detected",
+  "prompt": "Please interpret this laboratory report for the treating clinician: (1) list the key abnormal findings, (2) give the most likely interpretation, (3) recommend the next step. Be concise (under 150 words)."
+ },
+ "open_translate": {
+  "report": "LABORATORY REPORT\nPatient: Age 34, Sex Female\nClinical context: Cough for 6 weeks, night sweats; chest X-ray: right upper-lobe cavity.\nAnalyte | Result | Unit | Reference\nMycobacterium tuberculosis PCR (sputum, Xpert MTB/RIF) | MTB detected (medium); rifampicin resistance NOT detected |  | Not detected",
+  "prompt": "Please interpret this laboratory report for the treating clinician: (1) list the key abnormal findings, (2) give the most likely interpretation, (3) recommend the next step. Be concise (under 150 words)."
+ }
+}

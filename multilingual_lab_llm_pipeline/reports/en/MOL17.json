@@ -1,0 +1,20 @@
+{
+ "case_id": "MOL17",
+ "lang": "en",
+ "closed_direct": {
+  "report": "LABORATORY REPORT\nPatient: Age 47, Sex Male\nClinical context: Asymptomatic; PCR done for travel clearance 3 weeks after mild COVID-19.\nAnalyte | Result | Unit | Reference\nSARS-CoV-2 RT-PCR (nasopharyngeal) | Detected, Ct 36 |  | Not detected",
+  "prompt": "Question: What is the most appropriate interpretation? Choose ONE option (A–D) and give a one-sentence justification.\nA. Very low viral RNA level, most consistent with residual non-infectious RNA after recent infection; isolation is not indicated\nB. Highly infectious acute infection; isolate immediately\nC. Reinfection with a new variant\nD. Laboratory error"
+ },
+ "closed_translate": {
+  "report": "LABORATORY REPORT\nPatient: Age 47, Sex Male\nClinical context: Asymptomatic; PCR done for travel clearance 3 weeks after mild COVID-19.\nAnalyte | Result | Unit | Reference\nSARS-CoV-2 RT-PCR (nasopharyngeal) | Detected, Ct 36 |  | Not detected",
+  "prompt": "Question: What is the most appropriate interpretation? Choose ONE option (A–D) and give a one-sentence justification.\nA. Very low viral RNA level, most consistent with residual non-infectious RNA after recent infection; isolation is not indicated\nB. Highly infectious acute infection; isolate immediately\nC. Reinfection with a new variant\nD. Laboratory error"
+ },
+ "open_direct": {
+  "report": "LABORATORY REPORT\nPatient: Age 47, Sex Male\nClinical context: Asymptomatic; PCR done for travel clearance 3 weeks after mild COVID-19.\nAnalyte | Result | Unit | Reference\nSARS-CoV-2 RT-PCR (nasopharyngeal) | Detected, Ct 36 |  | Not detected",
+  "prompt": "Please interpret this laboratory report for the treating clinician: (1) list the key abnormal findings, (2) give the most likely interpretation, (3) recommend the next step. Be concise (under 150 words)."
+ },
+ "open_translate": {
+  "report": "LABORATORY REPORT\nPatient: Age 47, Sex Male\nClinical context: Asymptomatic; PCR done for travel clearance 3 weeks after mild COVID-19.\nAnalyte | Result | Unit | Reference\nSARS-CoV-2 RT-PCR (nasopharyngeal) | Detected, Ct 36 |  | Not detected",
+  "prompt": "Please interpret this laboratory report for the treating clinician: (1) list the key abnormal findings, (2) give the most likely interpretation, (3) recommend the next step. Be concise (under 150 words)."
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "case_id": "MOL04",
+ "lang": "en",
+ "closed_direct": {
+  "report": "LABORATORY REPORT\nPatient: Age 29, Sex Female\nClinical context: Chronic hepatitis B carrier; ALT 22 U/L; HBeAg negative.\nAnalyte | Result | Unit | Reference\nHBV DNA (quantitative PCR) | 1,800 | IU/mL | Not detected\nALT | 22 | U/L | 7–35",
+  "prompt": "Question: What is the most appropriate interpretation? Choose ONE option (A–D) and give a one-sentence justification.\nA. Low-level viraemia with normal ALT; likely inactive carrier — monitor HBV DNA and ALT periodically\nB. Start antiviral therapy immediately\nC. Cured hepatitis B\nD. Acute hepatitis B"
+ },
+ "closed_translate": {
+  "report": "LABORATORY REPORT\nPatient: Age 29, Sex Female\nClinical context: Chronic hepatitis B carrier; ALT 22 U/L; HBeAg negative.\nAnalyte | Result | Unit | Reference\nHBV DNA (quantitative PCR) | 1,800 | IU/mL | Not detected\nALT | 22 | U/L | 7–35",
+  "prompt": "Question: What is the most appropriate interpretation? Choose ONE option (A–D) and give a one-sentence justification.\nA. Low-level viraemia with normal ALT; likely inactive carrier — monitor HBV DNA and ALT periodically\nB. Start antiviral therapy immediately\nC. Cured hepatitis B\nD. Acute hepatitis B"
+ },
+ "open_direct": {
+  "report": "LABORATORY REPORT\nPatient: Age 29, Sex Female\nClinical context: Chronic hepatitis B carrier; ALT 22 U/L; HBeAg negative.\nAnalyte | Result | Unit | Reference\nHBV DNA (quantitative PCR) | 1,800 | IU/mL | Not detected\nALT | 22 | U/L | 7–35",
+  "prompt": "Please interpret this laboratory report for the treating clinician: (1) list the key abnormal findings, (2) give the most likely interpretation, (3) recommend the next step. Be concise (under 150 words)."
+ },
+ "open_translate": {
+  "report": "LABORATORY REPORT\nPatient: Age 29, Sex Female\nClinical context: Chronic hepatitis B carrier; ALT 22 U/L; HBeAg negative.\nAnalyte | Result | Unit | Reference\nHBV DNA (quantitative PCR) | 1,800 | IU/mL | Not detected\nALT | 22 | U/L | 7–35",
+  "prompt": "Please interpret this laboratory report for the treating clinician: (1) list the key abnormal findings, (2) give the most likely interpretation, (3) recommend the next step. Be concise (under 150 words)."
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "case_id": "MOL18",
+ "lang": "en",
+ "closed_direct": {
+  "report": "LABORATORY REPORT\nPatient: Age 52, Sex Male\nClinical context: Planned percutaneous coronary intervention; clopidogrel to be prescribed.\nAnalyte | Result | Unit | Reference\nCYP2C19 genotype | *2/*2 (poor metaboliser) |  | *1/*1 normal metaboliser",
+  "prompt": "Question: What is the most appropriate interpretation? Choose ONE option (A–D) and give a one-sentence justification.\nA. Poor metaboliser; clopidogrel is likely ineffective — use an alternative P2Y12 inhibitor (prasugrel or ticagrelor) if not contraindicated\nB. Normal response to clopidogrel expected\nC. Increase clopidogrel dose\nD. Avoid all antiplatelet therapy"
+ },
+ "closed_translate": {
+  "report": "LABORATORY REPORT\nPatient: Age 52, Sex Male\nClinical context: Planned percutaneous coronary intervention; clopidogrel to be prescribed.\nAnalyte | Result | Unit | Reference\nCYP2C19 genotype | *2/*2 (poor metaboliser) |  | *1/*1 normal metaboliser",
+  "prompt": "Question: What is the most appropriate interpretation? Choose ONE option (A–D) and give a one-sentence justification.\nA. Poor metaboliser; clopidogrel is likely ineffective — use an alternative P2Y12 inhibitor (prasugrel or ticagrelor) if not contraindicated\nB. Normal response to clopidogrel expected\nC. Increase clopidogrel dose\nD. Avoid all antiplatelet therapy"
+ },
+ "open_direct": {
+  "report": "LABORATORY REPORT\nPatient: Age 52, Sex Male\nClinical context: Planned percutaneous coronary intervention; clopidogrel to be prescribed.\nAnalyte | Result | Unit | Reference\nCYP2C19 genotype | *2/*2 (poor metaboliser) |  | *1/*1 normal metaboliser",
+  "prompt": "Please interpret this laboratory report for the treating clinician: (1) list the key abnormal findings, (2) give the most likely interpretation, (3) recommend the next step. Be concise (under 150 words)."
+ },
+ "open_translate": {
+  "report": "LABORATORY REPORT\nPatient: Age 52, Sex Male\nClinical context: Planned percutaneous coronary intervention; clopidogrel to be prescribed.\nAnalyte | Result | Unit | Reference\nCYP2C19 genotype | *2/*2 (poor metaboliser) |  | *1/*1 normal metaboliser",
+  "prompt": "Please interpret this laboratory report for the treating clinician: (1) list the key abnormal findings, (2) give the most likely interpretation, (3) recommend the next step. Be concise (under 150 words)."
+ }
+}

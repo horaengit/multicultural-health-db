@@ -1,0 +1,20 @@
+{
+ "case_id": "MOL02",
+ "lang": "ko",
+ "closed_direct": {
+  "report": "검사 결과 보고서\n환자: 나이 42, 성별 여\n임상 소견: Cervical screening; cytology: ASC-US.\n검사항목 | 결과 | 단위 | 참고치\n고위험 HPV DNA (PCR) | 음성 |  | 음성",
+  "prompt": "질문: What is the most appropriate next step? A–D 중 하나만 고르고 한 문장으로 근거를 쓰세요.\nA. Return to routine screening (co-testing in 3 years per most guidelines)\nB. Colposcopy\nC. Cervical conisation\nD. Antiviral therapy"
+ },
+ "closed_translate": {
+  "report": "검사 결과 보고서\n환자: 나이 42, 성별 여\n임상 소견: Cervical screening; cytology: ASC-US.\n검사항목 | 결과 | 단위 | 참고치\n고위험 HPV DNA (PCR) | 음성 |  | 음성",
+  "prompt": "먼저 보고서를 내부적으로 영어로 번역하고 영어로 추론한 뒤, 최종 답변은 한국어로 작성하세요.\n\n질문: What is the most appropriate next step? A–D 중 하나만 고르고 한 문장으로 근거를 쓰세요.\nA. Return to routine screening (co-testing in 3 years per most guidelines)\nB. Colposcopy\nC. Cervical conisation\nD. Antiviral therapy"
+ },
+ "open_direct": {
+  "report": "검사 결과 보고서\n환자: 나이 42, 성별 여\n임상 소견: Cervical screening; cytology: ASC-US.\n검사항목 | 결과 | 단위 | 참고치\n고위험 HPV DNA (PCR) | 음성 |  | 음성",
+  "prompt": "담당 의사를 위해 이 검사 결과를 해석해 주세요: (1) 주요 이상 소견을 나열하고, (2) 가장 가능성 높은 해석을 제시하고, (3) 다음 단계를 권고하세요. 150단어 이내로 간결하게 쓰세요."
+ },
+ "open_translate": {
+  "report": "검사 결과 보고서\n환자: 나이 42, 성별 여\n임상 소견: Cervical screening; cytology: ASC-US.\n검사항목 | 결과 | 단위 | 참고치\n고위험 HPV DNA (PCR) | 음성 |  | 음성",
+  "prompt": "먼저 보고서를 내부적으로 영어로 번역하고 영어로 추론한 뒤, 최종 답변은 한국어로 작성하세요.\n\n담당 의사를 위해 이 검사 결과를 해석해 주세요: (1) 주요 이상 소견을 나열하고, (2) 가장 가능성 높은 해석을 제시하고, (3) 다음 단계를 권고하세요. 150단어 이내로 간결하게 쓰세요."
+ }
+}

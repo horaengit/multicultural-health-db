@@ -1,0 +1,20 @@
+{
+ "case_id": "MOL07",
+ "lang": "en",
+ "closed_direct": {
+  "report": "LABORATORY REPORT\nPatient: Age 31, Sex Female\nClinical context: Recurrent pregnancy loss work-up; no personal or family history of thrombosis.\nAnalyte | Result | Unit | Reference\nMTHFR C677T genotype | Heterozygous (C/T) |  | —\nHomocysteine | 8 | µmol/L | 5–15",
+  "prompt": "Question: What is the most appropriate interpretation? Choose ONE option (A–D) and give a one-sentence justification.\nA. Common polymorphism with normal homocysteine; not clinically significant and does not explain pregnancy loss\nB. Inherited thrombophilia; start anticoagulation\nC. High-dose folate is mandatory\nD. Genetic counselling for a serious disorder"
+ },
+ "closed_translate": {
+  "report": "LABORATORY REPORT\nPatient: Age 31, Sex Female\nClinical context: Recurrent pregnancy loss work-up; no personal or family history of thrombosis.\nAnalyte | Result | Unit | Reference\nMTHFR C677T genotype | Heterozygous (C/T) |  | —\nHomocysteine | 8 | µmol/L | 5–15",
+  "prompt": "Question: What is the most appropriate interpretation? Choose ONE option (A–D) and give a one-sentence justification.\nA. Common polymorphism with normal homocysteine; not clinically significant and does not explain pregnancy loss\nB. Inherited thrombophilia; start anticoagulation\nC. High-dose folate is mandatory\nD. Genetic counselling for a serious disorder"
+ },
+ "open_direct": {
+  "report": "LABORATORY REPORT\nPatient: Age 31, Sex Female\nClinical context: Recurrent pregnancy loss work-up; no personal or family history of thrombosis.\nAnalyte | Result | Unit | Reference\nMTHFR C677T genotype | Heterozygous (C/T) |  | —\nHomocysteine | 8 | µmol/L | 5–15",
+  "prompt": "Please interpret this laboratory report for the treating clinician: (1) list the key abnormal findings, (2) give the most likely interpretation, (3) recommend the next step. Be concise (under 150 words)."
+ },
+ "open_translate": {
+  "report": "LABORATORY REPORT\nPatient: Age 31, Sex Female\nClinical context: Recurrent pregnancy loss work-up; no personal or family history of thrombosis.\nAnalyte | Result | Unit | Reference\nMTHFR C677T genotype | Heterozygous (C/T) |  | —\nHomocysteine | 8 | µmol/L | 5–15",
+  "prompt": "Please interpret this laboratory report for the treating clinician: (1) list the key abnormal findings, (2) give the most likely interpretation, (3) recommend the next step. Be concise (under 150 words)."
+ }
+}

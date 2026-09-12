@@ -1,0 +1,20 @@
+{
+ "case_id": "MOL18",
+ "lang": "ko",
+ "closed_direct": {
+  "report": "검사 결과 보고서\n환자: 나이 52, 성별 남\n임상 소견: Planned percutaneous coronary intervention; clopidogrel to be prescribed.\n검사항목 | 결과 | 단위 | 참고치\nCYP2C19 genotype | *2/*2 (저대사자) |  | *1/*1 정상 대사자",
+  "prompt": "질문: What is the most appropriate interpretation? A–D 중 하나만 고르고 한 문장으로 근거를 쓰세요.\nA. Poor metaboliser; clopidogrel is likely ineffective — use an alternative P2Y12 inhibitor (prasugrel or ticagrelor) if not contraindicated\nB. Normal response to clopidogrel expected\nC. Increase clopidogrel dose\nD. Avoid all antiplatelet therapy"
+ },
+ "closed_translate": {
+  "report": "검사 결과 보고서\n환자: 나이 52, 성별 남\n임상 소견: Planned percutaneous coronary intervention; clopidogrel to be prescribed.\n검사항목 | 결과 | 단위 | 참고치\nCYP2C19 genotype | *2/*2 (저대사자) |  | *1/*1 정상 대사자",
+  "prompt": "먼저 보고서를 내부적으로 영어로 번역하고 영어로 추론한 뒤, 최종 답변은 한국어로 작성하세요.\n\n질문: What is the most appropriate interpretation? A–D 중 하나만 고르고 한 문장으로 근거를 쓰세요.\nA. Poor metaboliser; clopidogrel is likely ineffective — use an alternative P2Y12 inhibitor (prasugrel or ticagrelor) if not contraindicated\nB. Normal response to clopidogrel expected\nC. Increase clopidogrel dose\nD. Avoid all antiplatelet therapy"
+ },
+ "open_direct": {
+  "report": "검사 결과 보고서\n환자: 나이 52, 성별 남\n임상 소견: Planned percutaneous coronary intervention; clopidogrel to be prescribed.\n검사항목 | 결과 | 단위 | 참고치\nCYP2C19 genotype | *2/*2 (저대사자) |  | *1/*1 정상 대사자",
+  "prompt": "담당 의사를 위해 이 검사 결과를 해석해 주세요: (1) 주요 이상 소견을 나열하고, (2) 가장 가능성 높은 해석을 제시하고, (3) 다음 단계를 권고하세요. 150단어 이내로 간결하게 쓰세요."
+ },
+ "open_translate": {
+  "report": "검사 결과 보고서\n환자: 나이 52, 성별 남\n임상 소견: Planned percutaneous coronary intervention; clopidogrel to be prescribed.\n검사항목 | 결과 | 단위 | 참고치\nCYP2C19 genotype | *2/*2 (저대사자) |  | *1/*1 정상 대사자",
+  "prompt": "먼저 보고서를 내부적으로 영어로 번역하고 영어로 추론한 뒤, 최종 답변은 한국어로 작성하세요.\n\n담당 의사를 위해 이 검사 결과를 해석해 주세요: (1) 주요 이상 소견을 나열하고, (2) 가장 가능성 높은 해석을 제시하고, (3) 다음 단계를 권고하세요. 150단어 이내로 간결하게 쓰세요."
+ }
+}
