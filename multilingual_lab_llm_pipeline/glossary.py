@@ -23,6 +23,8 @@ language, decided once, in place of the same judgement repeated across 1,218 row
 
 Usage:  python glossary.py --build            # propose translations/glossary.yaml
         python glossary.py --report           # show what the current file would change
+        python glossary.py --sheet --langs ar th   # workbook of what still needs deciding
+        python glossary.py --confirm --langs ar th # read those workbooks back in
 """
 import argparse, collections, os, re, sys
 
@@ -131,6 +133,13 @@ def build(langs, path=PATH):
                 continue
             if sum(counts.values()) < 2:
                 continue
+            # A reference range like "0.2-1.0" carries no words to translate. Where
+            # every draft already left one alone, there is no decision to put to a
+            # co-author, so pin it rather than spend a row of their attention on it.
+            if (len(counts) == 1 and english in counts
+                    and not any(ch.isalpha() for ch in english)):
+                confirmed[lang][english] = english
+                continue
             # Leaving the English untouched is the thing being corrected, so it only
             # wins when nothing else was ever produced for this term.
             translated = {k: n for k, n in counts.items() if k and k != english}
@@ -176,18 +185,130 @@ def report(langs, path=PATH):
         print()
 
 
+def sheet(langs, path=PATH):
+    """Write the unconfirmed proposals as one workbook per language for the co-author.
+
+    A term the co-author accepts needs no typing: `decision` is pre-filled with the
+    proposal, and they overwrite it only where it is wrong. Every rendering the drafts
+    produced is listed beside it, since the disagreement is usually the useful part.
+    """
+    from openpyxl import load_workbook
+    from openpyxl.styles import Alignment, Font, PatternFill
+
+    data = yaml.safe_load(open(path, encoding="utf-8")) or {}
+    review = data.get("review") or {}
+    for lang in langs:
+        proposals = review.get(lang) or {}
+        if not proposals:
+            print(f"{lang}: nothing awaiting review")
+            continue
+        src = os.path.join(HERE, "translations", f"verify_{lang}.xlsx")
+        df = pd.read_excel(src).fillna("")
+        df = df[df.field.astype(str).str.match(LAB_FIELD)]
+        seen = collections.defaultdict(collections.Counter)
+        for r in df.itertuples():
+            seen[str(r.english).strip()][str(r.draft_translation).strip()] += 1
+
+        rows = []
+        for english, proposed in sorted(proposals.items()):
+            counts = seen.get(english, collections.Counter())
+            rows.append({
+                "english": english,
+                "decision": proposed,
+                "proposed": proposed,
+                "occurrences": sum(counts.values()),
+                "renderings_in_drafts": " | ".join(f"{k} (x{n})" for k, n in counts.most_common()),
+                "disagreed": len(counts) > 1,
+                "left_in_english": counts.get(english, 0),
+                "comment": "",
+            })
+        out = os.path.join(HERE, "translations", f"glossary_review_{lang}.xlsx")
+        pd.DataFrame(rows).to_excel(out, index=False)
+
+        wb = load_workbook(out)
+        ws = wb.active
+        ws.freeze_panes = "A2"
+        for cell in ws[1]:
+            cell.font = Font(bold=True)
+        for width, col in zip((30, 30, 30, 12, 46, 11, 14, 30), ws.iter_cols(min_row=1)):
+            ws.column_dimensions[col[0].column_letter].width = width
+        # Where the drafts disagreed, the proposal is a majority vote over genuinely
+        # different answers, so it is the one most worth a second look.
+        flag = PatternFill("solid", fgColor="FFC7CE")
+        for row in ws.iter_rows(min_row=2):
+            for cell in row:
+                cell.alignment = Alignment(wrap_text=True, vertical="top")
+            if row[5].value:
+                for cell in row:
+                    cell.fill = flag
+        wb.save(out)
+        split = sum(1 for r in rows if r["disagreed"])
+        print(f"{lang}: {len(rows)} term(s) to confirm ({split} where the drafts "
+              f"disagreed) -> {out}")
+
+
+def confirm(langs, path=PATH):
+    """Move decided terms out of `review:` and into the language block."""
+    data = yaml.safe_load(open(path, encoding="utf-8")) or {}
+    review = data.get("review") or {}
+    moved_total = 0
+    for lang in langs:
+        out = os.path.join(HERE, "translations", f"glossary_review_{lang}.xlsx")
+        if not os.path.exists(out):
+            print(f"{lang}: {out} not found -- run --sheet first")
+            continue
+        df = pd.read_excel(out).fillna("")
+        moved = {}
+        for r in df.itertuples():
+            decision = str(r.decision).strip()
+            # A cleared cell means "not decided yet", not "render this as nothing".
+            if decision:
+                moved[str(r.english).strip()] = decision
+        if not moved:
+            print(f"{lang}: no decisions filled in -- nothing to confirm")
+            continue
+        data.setdefault(lang, {})
+        data[lang].update(moved)
+        data[lang] = dict(sorted(data[lang].items()))
+        for english in moved:
+            (review.get(lang) or {}).pop(english, None)
+        if not review.get(lang):
+            review.pop(lang, None)
+        moved_total += len(moved)
+        print(f"{lang}: {len(moved)} term(s) confirmed")
+
+    if not moved_total:
+        return
+    if review:
+        data["review"] = review
+    else:
+        data.pop("review", None)
+    with open(path, "w", encoding="utf-8") as fh:
+        fh.write(HEADER)
+        yaml.safe_dump(data, fh, allow_unicode=True, sort_keys=False, default_flow_style=False)
+    print(f"wrote {path} -- redraft with `python translate.py --langs ... --overwrite`")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--langs", nargs="+", default=["ko", "ar", "th"])
     ap.add_argument("--build", action="store_true", help="propose entries from the drafts")
     ap.add_argument("--report", action="store_true", help="show what the glossary would change")
+    ap.add_argument("--sheet", action="store_true",
+                    help="write the proposals awaiting review to a workbook per language")
+    ap.add_argument("--confirm", action="store_true",
+                    help="read those workbooks back and promote the decided terms")
     args = ap.parse_args()
     if args.build:
         build(args.langs)
     elif args.report:
         report(args.langs)
+    elif args.sheet:
+        sheet(args.langs)
+    elif args.confirm:
+        confirm(args.langs)
     else:
-        ap.error("pass --build or --report")
+        ap.error("pass --build, --report, --sheet, or --confirm")
 
 
 if __name__ == "__main__":
